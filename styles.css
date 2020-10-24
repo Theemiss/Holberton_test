@@ -1,0 +1,523 @@
+/* .......................layout.............*/
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1a1a1d;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: #1a1a1d;
+}
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+footer {
+  background-color: #c3073f;
+}
+header {
+  background-color: #c3073f;
+}
+.header-menu {
+  color: white;
+}
+.footer-menu {
+  color: white;
+}
+.logo {
+  font-size: 4em;
+  float: left;
+  padding-left: 40px;
+  padding-right: 20px;
+  color: #1a1a1d;
+}
+.logo:hover {
+  color: white;
+}
+.footer-menu:hover {
+  color: #1a1a1d;
+}
+p {
+  color: #fff;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 15px;
+  font-size: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 20px;
+}
+/* .......................layout end.............*/
+
+/* *************************nav bar start .....................*/
+#nav ul {
+  display: inline-block;
+  padding: 0em 3em;
+  border-radius: 40px;
+  background: #1a1a1d;
+}
+
+#nav > ul > li {
+  display: inline-block;
+}
+
+#nav > ul > li:last-child {
+  padding-right: 0;
+}
+
+#nav > ul > li > a,
+#nav > ul > li > span {
+  display: block;
+  padding: 1.3em 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1em;
+  outline: 0;
+  color: #7b7b7b;
+}
+
+#nav > ul > li > a:hover {
+  color: #fff;
+}
+
+#nav li.active a {
+  color: #fff;
+}
+
+#nav > ul > li > ul {
+  display: none;
+}
+/* *************************nav bar end .....................*/
+/* .....................index......................*/
+.title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row {
+  color: white;
+  text-align: center;
+}
+.title1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+/* .....................index end......................*/
+
+/*.......................image hover Effect start...............*/
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.imgtext {
+  color: #c3073f;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.imgtext a {
+  color: black;
+}
+/*.......................image hover Effect end...............*/
+
+/* .................................link hover effect start ................*/
+.Redirect {
+  color: #c3073f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Redirect a {
+  color: #c3073f;
+}
+.Redirect a:hover {
+  color: white;
+}
+/* .................................link hover effect end ................*/
+
+/* ............................Loaader start......................................*/
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #c3073f;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/* ............................Loaader End......................................*/
+
+.title2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+#smart_thumbnail {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.RESO {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: square outside
+    url(https://cdn.bitdegree.org/learn/list-style-image-marker-1.png?426d93cd);
+}
+ul a {
+  color: #f3f3f3;
+}
+ul a:hover {
+  color: #c3073f;
+}
+.sub {
+  color: #c3073f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+}
+/*....................image slider .......................*/
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  width: 20%;
+  height: 480px;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+/*..............image slider end........................*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#info {
+  color: white;
+}
+
+/*.............................card aboutme ..........................*/
+
+.card {
+  width: 280px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@keyframes cardAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:nth-child(1) {
+  animation: cardAnim 5s 3s backwards;
+}
+.card:nth-child(2) {
+  animation: cardAnim 5s 4s backwards;
+}
+.card:nth-child(3) {
+  animation: cardAnim 5s 5s backwards;
+}
+
+.image-top {
+  width: 101%;
+  height: 220px;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -110px;
+  z-index: 10;
+  border: 5px solid #eee;
+}
+
+.card h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  color: #555;
+  margin: 10px;
+}
+
+.job {
+  font-family: "Montserrat", sans-serif;
+  color: #777;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-me {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  width: 90%;
+  margin: 15px 0;
+  font-style: italic;
+  color: #444;
+  text-align: center;
+}
+
+.card button {
+  width: 120px;
+  padding: 7px;
+  margin: 10px 0;
+  background-color: #c3073f;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #eee;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover button {
+  animation: buttonRotation 0.5s 0.5s linear;
+}
+
+@keyframes buttonRotation {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  25% {
+    transform: scale(1.2) rotateZ(5deg);
+  }
+  50% {
+    transform: scale(1.3) rotateZ(-5deg);
+  }
+  75% {
+    transform: scale(1.4) rotateZ(5deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(0);
+  }
+}
+
+.social-icons {
+  width: 150px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 20px 0;
+  border-top: 1px solid #999;
+  padding-top: 20px;
+}
+
+.social-icons i {
+  font-size: 18px;
+}
+
+.fa-facebook-f {
+  color: #3b5999;
+}
+.fa-youtube {
+  color: #cd201f;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-instagram {
+  color: #fb3958;
+}
+.fa-linkedin-in {
+  color: #0077b5;
+}
+.MEET {
+  color: #c3073f;
+  text-align: center;
+  font-size: 30px;
+}
